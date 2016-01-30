@@ -3,7 +3,7 @@ package jchs2;
 import java.util.Arrays;
 import java.util.Random;
 
-public class APQuizzer {
+public class APQuizzer1 {
 
 	public static void main(String[] args) {
 		//1
