@@ -60,12 +60,4 @@ public class ArrayStats {
 		return String.format("Array Stats:\nRows: %d\t(Max)Cols: %d\n", rows, cols);
 	}
 	
-	public static String toString(List l) {
-		String flatten = "[";
-		for (Object o : l){
-			flatten = flatten + o.toString() +',';
-		}
-		flatten = flatten + ']';
-		return flatten;
-	}
 }
