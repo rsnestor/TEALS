@@ -34,6 +34,7 @@ public class SparseArray {
 	 * the sparse array. Precondition: 0 row < getNumRows() 0 col < getNumCols()
 	 */
 	public int getValueAt(int row, int col) {
+		return -1;
 		/* to be implemented in part (a) */ }
 
 	/**
