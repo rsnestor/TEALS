@@ -1,12 +1,13 @@
 package jchs2;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class SparseArray {
 	/** The number of rows and columns in the sparse array. */
-	private int numRows;
-	private int numCols;
+	private int numRows=0;
+	private int numCols=0;
 	/**
 	 * The list of entries representing the non-zero elements of the sparse
 	 * array. Entries are stored in the list in no particular order. Each
@@ -19,8 +20,17 @@ public class SparseArray {
 		entries = new ArrayList<SparseArrayEntry>();
 	}
 	
-	public SparseArray(final List<SparseArrayEntry> entries){
-		this.entries = entries;
+	/**
+	 * Construct a SparseArray given a List of sparse entries  (SN)
+	 * @param sparseEntries
+	 */
+	public SparseArray(final List<SparseArrayEntry> sparseEntries) {
+		this.entries = sparseEntries;
+		//set internal rows, cols based on maximum from sparse entries (zero based)
+		for (SparseArrayEntry entry : sparseEntries){
+			if (entry.getRow()>=numRows) numRows=entry.getRow()+1;
+			if (entry.getCol()>=numCols) numCols=entry.getCol()+1;
+		}
 	}
 
 	/** Returns the number of rows in the sparse array. */
@@ -39,7 +49,7 @@ public class SparseArray {
 	 */
 	public int getValueAt(int row, int col) {
 		int val = 0;
-		//part a
+		//part a [Student implementation]
 		return val;
 	}
 
@@ -48,7 +58,7 @@ public class SparseArray {
 	 * getNumCols()
 	 */
 	public void removeColumn(int col) {
-		//part b
+		//part b [Student implementation]
 	}
 
 }
