@@ -18,6 +18,10 @@ public class SparseArray {
 	public SparseArray() {
 		entries = new ArrayList<SparseArrayEntry>();
 	}
+	
+	public SparseArray(final List<SparseArrayEntry> entries){
+		this.entries = entries;
+	}
 
 	/** Returns the number of rows in the sparse array. */
 	public int getNumRows() {
@@ -35,7 +39,7 @@ public class SparseArray {
 	 */
 	public int getValueAt(int row, int col) {
 		int val = 0;
-		// part a
+		//part a
 		return val;
 	}
 
@@ -44,7 +48,7 @@ public class SparseArray {
 	 * getNumCols()
 	 */
 	public void removeColumn(int col) {
-		// part b
+		//part b
 	}
 
 }
