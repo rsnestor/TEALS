@@ -21,12 +21,17 @@ public class SparseArrayTest {
 	}
 
 	@Test
-	public void test() {
+	public void testGetValueAt() {
 		SparseArray array = new SparseArray(entries);
 		assertEquals("rows==4",4,array.getNumRows());
 		assertEquals("cols==5",5,array.getNumCols());
 		assertEquals("SparseArray[3][3] == 0",0,array.getValueAt(3,3));
 		assertEquals("SparseArray[1][1] == 5",5,array.getValueAt(1,1));
+	}
+	
+	@Test
+	public void testRemoveColumn() {
+		SparseArray array = new SparseArray(entries);
 		//delete col 1
 		array.removeColumn(1);
 		assertEquals("rows==4",4,array.getNumRows());
