@@ -1,13 +1,13 @@
 package jchs2;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class SparseArray {
 	/** The number of rows and columns in the sparse array. */
 	private int numRows=0;
 	private int numCols=0;
+	
 	/**
 	 * The list of entries representing the non-zero elements of the sparse
 	 * array. Entries are stored in the list in no particular order. Each
