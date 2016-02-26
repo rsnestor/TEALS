@@ -34,15 +34,17 @@ public class SparseArray {
 	 * the sparse array. Precondition: 0 row < getNumRows() 0 col < getNumCols()
 	 */
 	public int getValueAt(int row, int col) {
-		return -1;
-		/* to be implemented in part (a) */ }
+		int val = 0;
+		// part a
+		return val;
+	}
 
 	/**
 	 * Removes the column col from the sparse array. Precondition: 0 col <
 	 * getNumCols()
 	 */
 	public void removeColumn(int col) {
-		/* to be implemented in part (b) */ }
-	// There may be instance variables, constructors, and methods that are not
-	// shown.
+		// part b
+	}
+
 }
