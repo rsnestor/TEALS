@@ -18,6 +18,7 @@ public class SparseArrayTest {
 		entries.add(new SparseArrayEntry(2,0,1));
 		entries.add(new SparseArrayEntry(3,1,-9));
 		entries.add(new SparseArrayEntry(1,1,5));
+		entries.add(new SparseArrayEntry(3,2,2));
 	}
 
 	@Test
@@ -40,6 +41,7 @@ public class SparseArrayTest {
 		assertEquals("SparseArray[1][4] == 0",0,array.getValueAt(1,4));
 		assertEquals("SparseArray[1][3] == 4",4,array.getValueAt(1,3));
 		assertEquals("SparseArray[2][0] == 1",1,array.getValueAt(2,0));
+		assertEquals("SparseArray[3][1] == 2",2,array.getValueAt(3,1));
 	}
 
 }
