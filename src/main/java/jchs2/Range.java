@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * Implementation of the NumberGroup interface
+**/
 public class Range implements NumberGroup {
 	
 	List <Integer>intList = new ArrayList<Integer>();
